@@ -15,7 +15,7 @@ BLACK = "#000000"
 WHITE = "#FFFFFF"
 # --- DATA SOURCE -------------------------------------------------------------
 # 🔹 Посилання на Google Sheets (CSV)
-SHEET_URL = "[docs.google.com](https://docs.google.com/spreadsheets/d/1wwnnMxXhtiAsEACPvZv1S_vLy5Cyntz6QJQPUE4G2MU/gviz/tq?tqx=out:csv)"
+SHEET_URL = "https://docs.google.com/spreadsheets/d/1wwnnMxXhtiAsEACPvZv1S_vLy5Cyntz6QJQPUE4G2MU/gviz/tq?tqx=out:csv"
 @st.cache_data(ttl=300)
 def load_data(url=SHEET_URL):
     res = requests.get(url)

@@ -15,7 +15,7 @@ BLACK = "#000000"
 WHITE = "#FFFFFF"
 # --- DATA SOURCE -------------------------------------------------------------
 # 🔹 Посилання на Google Sheets (CSV)
-SHEET_URL = "[docs.google.com](https://docs.google.com/spreadsheets/d/1wwnnMxXhtiAsEACPvZv1S_vLy5Cyntz6QJQPUE4G2MU/gviz/tq?tqx=out:csv)"---------------
+SHEET_URL = "[docs.google.com](https://docs.google.com/spreadsheets/d/1wwnnMxXhtiAsEACPvZv1S_vLy5Cyntz6QJQPUE4G2MU/gviz/tq?tqx=out:csv)"
 df["is_holiday"] = df["is_holiday"].astype(str).str.lower().isin(["true", "1", "yes"])
 df["is_weekend"] = df["is_weekend"].astype(str).str.lower().isin(["true", "1", "yes"])
 # --- METRICS -----------------------------------------------------------------
